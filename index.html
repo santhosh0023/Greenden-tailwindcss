@@ -4,36 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    
     
     <title>Greenden</title>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
 <body>
     <!-- navbar -->
     <nav class="bg-green-100  p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
           
         
-            <ul class="flex  gap-5 text-gray-600 hidden md:flex ">
+            <ul class="flex    gap-5 text-gray-600 hidden md:flex ">
                 <li>
-                    <a class="hover:underline hover:text-black" href="#">home</a>
+                    <a class="hover:underline   hover:text-black  " href="#">home</a>
                 </li>
                 <li>
                     <a class="hover:underline hover:text-black" href="./product.html">product</a>
                 </li>
                 <li>
-                    <a class="hover:underline  hover:text-black" href="./contact.html">contact</a>
+                    <a class="hover:underline hover:text-black" href="./contact.html">contact</a>
                 </li>
             </ul>
 
        
     </nav>
+    <!-- side navbar -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+
+        </div>
+        
+        <ul class="flex   flex-col  gap-10 items-center text-gray-600 ">
+            <li>
+                <a class="hover:underline   hover:text-black  " href="./index.html">home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">product</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">contact</a>
+            </li>
+        </ul>
+    </section>
    <!-- header -->
-   <section class="bg-green-100 p-4 md:p-10 flex justify-center ">
+   <section class="bg-green-100 p-4 md:p-10 flex justify-center  ">
     <div>
     <p>we offer uou a wide range of Artificial and natural flowers</p>
     <h2 class="font-bold text-3xl  md:text-5xl mb-5">Plants for your interior</h2>
@@ -50,11 +69,11 @@
     </div>
    </section>
    <!-- about section -->
-   <section class="text-center">
+   <section class="text-center ">
     <h1 class="text-3xl font-bold mt-5">About us</h1>
     <p>this site for those who admire the beauty and harmony of nature</p>
     <div class=" md:flex">
-        <div class="border border-black p-2 m-6">
+        <div class="border border-black p-2 m-6 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 inline">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
               </svg>
@@ -62,13 +81,13 @@
            <h2 class="text-3xl font-medium" >Large Assortment</h2>
            <p>Lorem ipsum, Possimus nobis voluptatibus esse minima, dolorum veniam aspernatur explicabo! Nostrum aspernatur, dolores voluptates accusamus officiis excepturi soluta commodi ex consectetur fuga? Aliquid!</p>
         </div>
-        <div class="border border-black p-2 m-6">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 inline">
+        <div class="border border-black p-2 m-6 ">
+            <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 inline">
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
           </svg>
           
            <h2 class="text-3xl font-medium" >free and fast shipping</h2>
-           <p>Lorem ipsum, . Possimus nobis voluptatibus esse minima, dolorum veniam aspernatur explicabo! Nostrum aspernatur, dolores voluptates accusamus officiis excepturi soluta commodi ex consectetur fuga? Aliquid!</p>
+           <p class="">Lorem ipsum, . Possimus nobis voluptatibus esse minima, dolorum veniam aspernatur explicabo! Nostrum aspernatur, dolores voluptates accusamus officiis excepturi soluta commodi ex consectetur fuga? Aliquid!</p>
         </div>
         <div class="border border-black p-2 m-6">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 inline">
@@ -102,7 +121,7 @@
             <p>$20</p>
         </div>
         <div>
-            <img src="./images/besrseller_4.jpg" class="inline hover:shadow-xl -transform hover:translate-y-2">
+            <img src="./images/besrseller_4.jpg" class="inline  hover:shadow-xl -transform hover:translate-y-2">
             <h1>rose plant</h1>
             <p>$20</p>
         </div>
@@ -113,17 +132,17 @@
    <section  >
     <h1 class="font-bold text-3xl mt-5 text-center">customer review</h1>
     <div class="flex flex-col gap-5 justify-center text-white m-5" >
-        <div class="bg-green-900 p-5 container">
+        <div class="bg-green-900  p-5 container">
            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum illo hic molestiae earum reprehenderit eius omnis velit asperiores voluptas sed.</p> 
            <h3 class="text-yellow-300">genny mathew</h3>
         </div>
         <div class="bg-green-900 p-5 container">
            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum illo hic molestiae earum reprehenderit eius omnis velit asperiores voluptas sed.</p> 
-           <h3 class="text-yellow-300">jim</h3>
+           <h3 class="text-yellow-300 ">jim</h3>
         </div>
         <div class="bg-green-900 p-5 container">
            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum illo hic molestiae earum reprehenderit eius omnis velit asperiores voluptas sed.</p> 
-           <h3 class="text-yellow-300">Amir</h3>
+           <h3 class="text-yellow-300 ">Amir</h3>
         </div>
     </div>
    </section>
@@ -141,5 +160,8 @@
     <p>the standard chuck of lorem ipsum used since the 1500s is reproduced below for those interest</p>
     <p>&copy;2024 Greenden.com</p>
    </section>
+   <script src="./index.js">
+  
+   </script>
 </body>
 </html>
